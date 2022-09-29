@@ -7,7 +7,7 @@ import "../js/components/menu.js";
 import "../js/components/modal.js";
 
 // gsap
-gsap.registerPlugin('ScrollTrigger');
-gsap.config({
-  nullTargetWarn: true,
-});
+// gsap.registerPlugin('ScrollTrigger');
+// gsap.config({
+//   nullTargetWarn: true,
+// });
