@@ -1,0 +1,165 @@
+
+// variables
+$input-font-family: $primary-font;
+$input-font-size: $global-font-size;
+$input-line-height: $global-line-height;
+$input-background-color: $light-gray;
+$input-border-width: 1px;
+$input-border-color: transparent;
+$input-border-focus-color: $black;
+$input-border-radius: 0;
+$input-padding: 1.2rem;
+
+$validation-color: $black;
+
+$placeholder-color:$black;
+$placeholder-opacity:.5;
+$placeholder-font-weight: $global-weight-normal;
+
+
+// input fields
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+input[type="number"],
+textarea,
+select {
+	display: block;
+	width: 100%;
+	box-shadow: none;
+  font-family: $input-font-family;
+  font-size: $input-font-size;
+  line-height: $input-line-height;
+  border-width: $input-border-width;
+  border-color: $input-border-color;
+  @include border-radius($input-border-radius);
+  padding:$input-padding;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: $input-background-color;
+	&:focus {
+		outline-style:none;
+		box-shadow:none;
+    border: 1px solid $input-border-focus-color;
+	}
+}
+textarea {
+  height:14.4rem;
+}
+
+
+// dropdown field
+.ginput_container_select {
+  position: relative;
+  select {
+    width:100%;
+    cursor: pointer;
+  }
+}
+
+// gform fields
+.gform_fields {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+
+  // gfield
+  .gfield {
+  	margin-bottom: $global-line-height;
+    grid-column: 1/-1;
+    margin-bottom:2.4rem;
+    &.gfield--width-half {
+      @media screen and (min-width: $break-768) {
+        grid-column: span 6;
+      }
+    }
+    &.gfield--width-third {
+      @media screen and (min-width: $break-960) {
+        grid-column: span 4;
+      }
+    }
+    // label
+    label.gfield_label {
+      font-weight: $global-weight-bold;
+      margin-bottom:.6rem;
+      display: inline-block;
+      .gfield_required {
+        margin-left:.2rem;
+
+        .gfield_required_text {
+          display: none;
+        }
+      }
+    }
+
+    // description
+    .gfield_description {
+      font-size:1.4rem;
+      clear:both;
+      margin-top:.6rem;
+    }
+  }
+
+  // fieldset
+  fieldset {
+    padding:0;
+    border:0;
+    legend.gfield_label {
+      font-weight: $global-weight-bold;
+      margin-bottom:.6rem;
+    }
+    label {
+      margin-left:.6rem;
+    }
+  }
+}
+
+// gform footer
+.gform_footer {
+	margin:2.4rem 0 0 0;
+	position: relative;
+  input[type="submit"],
+  input[type="button"] {
+    @extend button;
+  }
+}
+
+// validation and errors
+h2.gform_submission_error {
+  @extend h4;
+  margin:0 0 $margin 0;
+}
+.gfield_validation_message {
+  color: $validation-color;
+}
+.gform_validation_container {
+	display: none;
+}
+
+// placeholders
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $placeholder-color;
+  font-weight: $placeholder-font-weight;
+  opacity: $placeholder-opacity;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholder-color;
+  font-weight: $placeholder-font-weight;
+  opacity: $placeholder-opacity;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $placeholder-color;
+  font-weight: $placeholder-font-weight;
+  opacity: $placeholder-opacity;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholder-color;
+  font-weight: $placeholder-font-weight;
+  opacity: $placeholder-opacity;
+}

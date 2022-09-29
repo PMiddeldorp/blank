@@ -1,0 +1,44 @@
+
+// Global
+$primary-font: "helvetica",sans-serif;
+$global-font-size: 24px;
+$global-width: 120rem;
+$global-line-height: 36px;
+$global-radius: 10px;
+
+// Colors
+$light-gray: #eeeeee;
+$medium-gray: #c5c6c7;
+$dark-gray: #58585a;
+$black: #000000;
+$white: #ffffff;
+$body-background: #ffffff;
+$body-font-color: $black;
+
+// Font weigths
+$global-weight-light:300;
+$global-weight-normal: 400;
+$global-weight-bold: 700;
+
+// margins
+$margin: 48px;
+$margin-big: $margin*2;
+$margin-half:$margin*.5;
+
+// Padding
+$padding: 48px;
+$padding-big: $padding*2;
+$padding-half:$padding*.5;
+
+// Break points
+$break-1920: 1920px;
+$break-1440: 1440px;
+$break-1280: 1280px;
+$break-1140: 1140px;
+$break-1024: 1024px;
+$break-960: 960px;
+$break-768: 768px;
+$break-640: 640px;
+$break-480: 480px;
+$break-375: 375px;
+$break-320: 320px;

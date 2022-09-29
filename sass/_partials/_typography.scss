@@ -1,0 +1,70 @@
+
+// paragraph
+p {
+  @include fluid-margin($break-320, $break-1440, 27px, 36px);
+  padding: 0;
+  text-rendering:optimizeLegibility;
+  &:last-child {
+    margin:0;
+  }
+}
+
+// links
+a {
+  text-decoration: underline;
+  color:$black;
+  &:hover{
+
+  }
+}
+a:hover,
+a:active {
+  outline:0;
+}
+a:visited {
+  // Mobile tap color
+  &:link {
+    //Highlight links on iOS, Similar to :hover for mobile devices.
+    // -webkit-tap-highlight-color:;
+  }
+}
+
+// headers
+h1,h2,h3,h4,h5,h6 {
+  margin:0 0 1.6rem 0;
+  padding:0;
+  text-rendering:optimizeLegibility;
+  font-weight:$global-weight-bold;
+  line-height: 1;
+  a {
+    text-decoration:none;
+  }
+}
+h1 {
+  @include fluid-type($break-320, $break-1440, 32px, 56px);
+}
+h2 {
+  @include fluid-type($break-320, $break-1440, 24px, 48px);
+}
+h3 {
+  @include fluid-type($break-320, $break-1440, 24px, 32px);
+}
+h4,h5,h6 {
+  @include fluid-type($break-320, $break-1440, 18px, 24px);
+}
+
+// lists
+ul, ol {
+  line-height: $global-line-height;
+  margin:0 0 $global-line-height 0;
+  li {
+
+  }
+}
+
+// blockquote
+blockquote {
+  margin:$global-line-height 0;
+  background: $medium-gray;
+  padding:$padding-half;
+}

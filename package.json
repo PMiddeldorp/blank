@@ -1,0 +1,21 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "author": "Buro Middeldorp",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --watch --mode=development",
+    "prod": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "babel-loader": "^8.2.5",
+    "path": "^0.12.7",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

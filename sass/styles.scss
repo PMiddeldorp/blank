@@ -1,0 +1,27 @@
+/*
+	Theme Name: Blank
+	Version: 1
+	Author: Pieter Middeldorp
+	Author URI: https://www.buromiddeldorp.nl
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import "_partials/normalize";
+@import "_partials/functions";
+@import "_partials/mixins";
+
+@import "_partials/fonts";
+@import "_partials/variables";
+@import "_partials/grid";
+@import "_partials/typography";
+
+@import "_partials/main";
+
+// components
+@import "_partials/components/buttons";
+@import "_partials/components/forms";
+@import "_partials/components/header";
+@import "_partials/components/modals";
+@import "_partials/components/nav";

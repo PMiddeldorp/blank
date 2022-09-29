@@ -1,0 +1,17 @@
+/* nav.scss */
+
+#nav {
+  display: none;
+  // @media (min-width: $break-960) {
+  //   display: block;
+  // }
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    li {
+      margin-left:2.4rem;
+    }
+  }
+}

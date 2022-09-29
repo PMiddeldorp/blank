@@ -1,0 +1,35 @@
+button,
+.button {
+  display: inline-block;
+  background: $black;
+  color:$white;
+  padding:0 $padding-half;
+  text-transform: $white;
+  font:$global-weight-bold 1.4rem/4.8rem $primary-font;
+  text-transform: uppercase;
+  border:0;
+  position: relative;
+  transition:0.2s ease;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  &:hover {
+    background: lighten($black,50%);
+  }
+}
+
+button#hamburger {
+  padding:0;
+  background: none;
+  line-height: 1;
+  .hamburger-wrapper {
+    width:3.2rem;
+  }
+  span {
+    display: block;
+    height:.3rem;
+    background: $black;
+    margin:6px 0;
+    width:3.2rem;
+  }
+}

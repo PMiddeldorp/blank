@@ -1,0 +1,104 @@
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+.clear {
+  clear:both;
+}
+
+// structure
+html {
+  font-size:62.5%;
+  height:100%;
+  &.no-scroll {
+    overflow:hidden;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: $global-weight-normal;
+  line-height: $global-line-height;
+  color: $body-font-color;
+  background: $body-background;
+  height:100%;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  @include fluid-type($break-320, $break-1440, 18px, 24px);
+
+}
+.wrapper {
+
+}
+.container {
+  max-width:$global-width;
+  width:100%;
+  margin:0 auto;
+  position: relative;
+  padding:0 $padding;
+}
+
+// screen reader only
+.sr-only {
+  position: absolute!important;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-decoration: none;
+  &:focus {
+    position: static;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    white-space: normal;
+    left: 2.4rem;
+    z-index: 1;
+    top: 2.4rem;
+    @extend button;
+  }
+}
+
+// image
+img {
+  max-width:100%;
+  height:auto;
+  vertical-align:bottom;
+}
+
+// video embed container
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  border:0;
+}
+
+/* Remove the default :focus outline */
+*:focus {
+  outline: none;
+}
+
+/* Show a custom outline on :focus-visible */
+*:focus-visible {
+  outline: 2px solid $black;
+  outline-offset: 4px;
+}
+
+#main {
+  padding:$padding 0;
+}
