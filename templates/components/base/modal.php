@@ -1,4 +1,5 @@
 <!-- modal -->
+<div id="modal-blur"></div>
 <div id="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title" aria-modal="true" tab-index="-1">
   <div id="modal-content">
 

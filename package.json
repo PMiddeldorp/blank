@@ -8,14 +8,21 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "webpack --watch --mode=development",
-    "prod": "webpack --mode=production"
+    "dev": "webpack --watch --mode=development --config webpack.dev.js",
+    "prod": "webpack --mode=production --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "babel-loader": "^8.2.5",
     "path": "^0.12.7",
+    "sass-loader": "^13.2.0",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "gsap": "file:gsap-bonus.tgz",
+    "node-sass": "^8.0.0"
   }
 }
