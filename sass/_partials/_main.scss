@@ -37,7 +37,10 @@ body {
   width:100%;
   margin:0 auto;
   position: relative;
-  padding:0 $padding;
+  padding:0 2.4rem;
+  @media screen and (min-width: $break-960) {
+    padding:0 $padding;
+  }
 }
 
 // screen reader only
@@ -95,13 +98,4 @@ img {
 *:focus-visible {
   outline: 2px solid $black;
   outline-offset: 4px;
-}
-
-
-#wrapper {
-
-}
-
-#main {
-  padding:$padding 0;
 }

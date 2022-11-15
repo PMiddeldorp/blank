@@ -7,6 +7,27 @@
     <?php the_content();?>
     <button class="open-modal" aria-expanded="false" aria-controls="modal" role="button">Open modal</button>
 
+    <h2>Grid</h2>
+    <div class="grid">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </main>
 
